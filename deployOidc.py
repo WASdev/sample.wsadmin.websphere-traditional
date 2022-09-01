@@ -33,6 +33,7 @@
 # 
 # cd (wasHome)/systemApps
 # mkdir WebSphereOIDCRP.ear
+# cd WebSphereOIDCRP.ear
 # unzip ../../installableApps/WebSphereOIDCRP.ear
 # cd ../profiles/(dmgr)/bin
 # wsadmin -f deployOidc.py install

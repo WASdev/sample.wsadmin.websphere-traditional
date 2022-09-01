@@ -14,6 +14,7 @@ To prepare your system to run `deployOidc.py` on a deployment manager, do the fo
 ```
 cd (wasHome)/systemApps
 mkdir WebSphereOIDCRP.ear
+cd WebSphereOIDCRP.ear
 unzip ../../installableApps/WebSphereOIDCRP.ear
 cd ../profiles/(dmgr)/bin
 wsadmin -f deployOidc.py install
