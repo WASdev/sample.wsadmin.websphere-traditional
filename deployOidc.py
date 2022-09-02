@@ -71,7 +71,7 @@ def getSystemAppsDir(cell, node):
 #
 # The WebSphereOIDCRP.ear is located in <WAS_HOME>/systemApps/WebSphereOIDCRP.ear
 #------------------------------------------------------------------------------
-def getISCDir(cell, node):
+def getEARDir(cell, node):
 	fileSep = getFileSep(node)
 	return getSystemAppsDir(cell, node) + fileSep + "WebSphereOIDCRP.ear"
 
@@ -155,11 +155,11 @@ def setCellVar(cell):
 # to the admin_host virtual host.
 #------------------------------------------------------------------------------
 def deployOidcEar(cell, node, server, type):
-	iscDir  = getISCDir(cell, node)
+	earDir  = getEARDir(cell, node)
 	sysAppDir  = getSystemAppsDir(cell, node)
 	try:
 		print "Deploying WebSphereOIDCRP.ear"
-		AdminApp.install(iscDir, ['-node', node, '-server', server, '-appname', 'WebSphereOIDCRP_Admin', '-usedefaultbindings', '-copy.sessionmgr.servername', server, '-zeroEarCopy', '-skipPreparation', '-installed.ear.destination', '$(WAS_INSTALL_ROOT)/systemApps'])
+		AdminApp.install(earDir, ['-node', node, '-server', server, '-appname', 'WebSphereOIDCRP_Admin', '-usedefaultbindings', '-copy.sessionmgr.servername', server, '-zeroEarCopy', '-skipPreparation', '-installed.ear.destination', '$(WAS_INSTALL_ROOT)/systemApps'])
 		
         #Do virtual host mapping
 		print "Mapping WebSphereOIDCRP_Admin to admin_host"
@@ -167,7 +167,7 @@ def deployOidcEar(cell, node, server, type):
 	except:
 		error = str(sys.exc_info()[1])
 		if error.count("7279E") > 0: # catch WASX7279E (app with given name already exists)
-			print "the OIDC TAI EAR is already installed."
+			print "The OIDC TAI EAR is already installed."
 		else:
 			print "Exception occurred during deployOidcEar(" + cell +", " + node + ", " + server + "):", error
 		return 0
@@ -265,7 +265,7 @@ else:
 
 	mode = sys.argv[0]
 	if mode == "install":
-		print "Installing the OIDC TAI EAR as an Admin app for the dmgr"
+		print "Installing the OIDC TAI EAR as an Admin app"
 		doInstall()
 	elif mode == "remove":
 		print "Removing the OIDC TAI EAR Admin app"
