@@ -17,7 +17,7 @@ To install the OIDC EAR as an admin application on your system, run the followin
 wsadmin -f deployOidc.py install
 ```
 
-The `deployOidc.py` can also be used to uninstall the `WebSphereOIDCRP_Admin` application.
+The `deployOidc.py` script can also be used to uninstall the `WebSphereOIDCRP_Admin` application.
 
 You can find steps to protect the admin console with OIDC at [How to protect the WebSphere admin console by using OIDC](https://www.ibm.com/support/pages/node/7057023).
 
