@@ -1,9 +1,9 @@
 # sample.wsadmin.websphere-traditional
 WebSphere Application Server traditional wsadmin scripts:
 
-- [deployOidc.py](https://github.com/WASdev/sample.wsadmin.websphere-traditional/blob/master/deployOidc.py)
-- [deploySaml.py](https://github.com/WASdev/sample.wsadmin.websphere-traditional/blob/master/deploySaml.py)
-- [updateAuthAlias.py](https://github.com/WASdev/sample.wsadmin.websphere-traditional/blob/master/updateAuthAlias.py)
+- [deployOidc.py](https://github.com/WASdev/sample.wsadmin.websphere-traditional/tree/master?tab=readme-ov-file#deployoidcpy)
+- [deploySaml.py](https://github.com/WASdev/sample.wsadmin.websphere-traditional/tree/master?tab=readme-ov-file#deploysamlpy)
+- [updateAuthAlias.py](https://github.com/WASdev/sample.wsadmin.websphere-traditional/tree/master?tab=readme-ov-file#updateauthaliaspy)
 
 ## Scripts provided
 
