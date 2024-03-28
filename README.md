@@ -1,8 +1,9 @@
 # sample.wsadmin.websphere-traditional
 WebSphere Application Server traditional wsadmin scripts:
 
-- [deployOidc.py](https://github.com/WASdev/sample.wsadmin.websphere-traditional/tree/master#deployoidcpy)
-- [updateAuthAlias.py](https://github.com/WASdev/sample.wsadmin.websphere-traditional/tree/master#updateauthaliaspy)
+- [deployOidc.py](https://github.com/WASdev/sample.wsadmin.websphere-traditional/blob/master/deployOidc.py)
+- [deploySaml.py](https://github.com/WASdev/sample.wsadmin.websphere-traditional/blob/master/deploySaml.py)
+- [updateAuthAlias.py](https://github.com/WASdev/sample.wsadmin.websphere-traditional/blob/master/updateAuthAlias.py)
 
 ## Scripts provided
 
@@ -20,6 +21,20 @@ wsadmin -f deployOidc.py install
 The `deployOidc.py` script can also be used to uninstall the `WebSphereOIDCRP_Admin` application.
 
 You can find steps to protect the admin console with OIDC at [How to protect the WebSphere admin console by using OIDC](https://www.ibm.com/support/pages/node/7057023).
+
+
+### deploySaml.py
+[deploySaml.py](https://github.com/WASdev/sample.wsadmin.websphere-traditional/blob/master/deploySaml.py) installs the WebSphere OIDC TAI EAR, `WebSphereSamlSP.ear`, as an admin app called `WebSphereSamlSP_Admin`.
+If you intend to protect the admin console on the deployment manager with the SAML TAI, the SAML EAR must be deployed as an admin app.
+
+To install the SAML EAR as an admin application on your system, run the following command:
+
+```
+wsadmin -f deploySaml.py install
+```
+
+The `deploySaml.py` script can also be used to uninstall the `WebSphereSamlSP_Admin` application.
+<!-- You can find steps to protect the admin console with OIDC at [How to protect the WebSphere admin console by using OIDC](https://www.ibm.com/support/pages/node/7057023). -->
 
 
 ### updateAuthAlias.py
