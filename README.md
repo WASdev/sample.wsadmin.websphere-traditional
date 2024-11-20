@@ -20,7 +20,7 @@ wsadmin -f deployOidc.py install
 
 The `deployOidc.py` script can also be used to uninstall the `WebSphereOIDCRP_Admin` application.
 
-You can find steps to protect the admin console with OIDC at [How to protect the WebSphere admin console by using OIDC](https://www.ibm.com/support/pages/node/7057023).
+You can find steps to protect the admin console with OIDC at [Configuring WebSphere admin console to login with OIDC](https://www.ibm.com/support/pages/node/7057023).
 <br/>
 <br/>
 
@@ -35,7 +35,9 @@ wsadmin -f deploySaml.py install
 ```
 
 The `deploySaml.py` script can also be used to uninstall the `WebSphereSamlSP_Admin` application.
-<!-- You can find steps to protect the admin console with OIDC at [How to protect the WebSphere admin console by using OIDC](https://www.ibm.com/support/pages/node/7057023). -->
+
+You can find steps to protect the admin console with SAML at [Configuring WebSphere admin console to login with SAML](https://www.ibm.com/support/pages/node/7149854).
+<br/>
 <br/>
 
 ### updateAuthAlias.py
