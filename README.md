@@ -41,7 +41,7 @@ You can find steps to protect the admin console with SAML at [Configuring WebSph
 <br/>
 
 ### updateAuthAlias.py
-[updateAuthAlias.py](https://github.com/WASdev/sample.wsadmin.websphere-traditional/blob/master/updateAuthAlias.py) dynamically updates the password of the specified JAAS authentication alias in a server process without requiring a server restart.  This script will not work as written on a node agent or deployment manager.
+[updateAuthAlias.py](https://github.com/WASdev/sample.wsadmin.websphere-traditional/blob/master/updateAuthAlias.py) dynamically updates the password of the specified JAAS authentication alias in an application server process without requiring a server restart.  This script will not work as described on a node agent or deployment manager.
 <br/>
 <br/>
 
