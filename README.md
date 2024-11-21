@@ -13,7 +13,7 @@ WebSphere Application Server traditional wsadmin scripts:
 [deployOidc.py](https://github.com/WASdev/sample.wsadmin.websphere-traditional/blob/master/deployOidc.py) installs the WebSphere OIDC TAI EAR, `WebSphereOIDCRP.ear`, as an admin app called `WebSphereOIDCRP_Admin`.
 If you intend to protect the admin console on the deployment manager with the OIDC TAI, the OIDC EAR must be deployed as an admin app.
 
-To install the OIDC EAR as an admin application on your system, run the following command:
+To install the OIDC EAR as an admin application on your deployment manager, run the following command:
 
 ```
 wsadmin -f deployOidc.py install
@@ -32,7 +32,7 @@ You can find steps to protect the admin console with OIDC at [Configuring WebSph
 [deploySaml.py](https://github.com/WASdev/sample.wsadmin.websphere-traditional/blob/master/deploySaml.py) installs the WebSphere OIDC TAI EAR, `WebSphereSamlSP.ear`, as an admin app called `WebSphereSamlSP_Admin`.
 If you intend to protect the admin console on the deployment manager with the SAML TAI, the SAML EAR must be deployed as an admin app.
 
-To install the SAML EAR as an admin application on your system, run the following command:
+To install the SAML EAR as an admin application on your deployment manager, run the following command:
 
 ```
 wsadmin -f deploySaml.py install
